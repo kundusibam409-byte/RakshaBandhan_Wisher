@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A special Raksha Bandhan surprise created with love by Sibam Kundu."
+    >
+
+    <meta
+        name="theme-color"
+        content="#ff4f81"
+    >
+
+    <title>Happy Raksha Bandhan ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <!-- Floating Decorations -->
+    <div id="floatingElements"></div>
+
+    <!-- Main App -->
+    <main class="app">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="badge">
+                ✨ A Special Surprise
+            </div>
+
+            <h1>
+                Happy
+                <span>Raksha Bandhan</span>
+                🎀
+            </h1>
+
+            <p class="hero-subtitle">
+                For the most special sisters in my life ❤️
+            </p>
+
+        </section>
+
+
+        <!-- Sister Selector -->
+        <section class="sister-selector">
+
+            <p class="section-label">
+                💕 Choose Your Surprise
+            </p>
+
+            <div class="sister-buttons">
+
+                <button
+                    class="sister-btn active"
+                    data-sister="sonali"
+                >
+                    Sonali Di
+                </button>
+
+                <button
+                    class="sister-btn"
+                    data-sister="bristi"
+                >
+                    Bristi
+                </button>
+
+                <button
+                    class="sister-btn"
+                    data-sister="nandita"
+                >
+                    Manu
+                </button>
+
+                <button
+                    class="sister-btn"
+                    data-sister="sagarika"
+                >
+                    Sagarika Di
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sister Card -->
+        <section class="sister-card">
+
+            <!-- Photo -->
+            <div class="photo-wrapper">
+
+                <div class="photo-glow"></div>
+
+                <div class="photo-frame">
+
+                    <img
+                        id="sisterImage"
+                        src="images/sonali.jpg"
+                        alt="Sonali Di"
+                    >
+
+                </div>
+
+                <div class="photo-decoration">
+                    ❤️
+                </div>
+
+            </div>
+
+
+            <!-- Sister Name -->
+            <h2 id="sisterName">
+                Sonali Di
+            </h2>
+
+
+            <!-- Relationship -->
+            <p class="relationship">
+                🌸 My Beautiful Sister 🌸
+            </p>
+
+
+            <!-- Message -->
+            <div class="message-card">
+
+                <div class="quote-icon">
+                    “
+                </div>
+
+                <p id="sisterMessage">
+                    Dear Sonali Di, you are one of the most
+                    special people in my life. Thank you for
+                    your love, support and care. May your life
+                    always be filled with happiness and success.
+                    ❤️
+                </p>
+
+            </div>
+
+
+            <!-- Surprise Button -->
+            <button
+                id="surpriseBtn"
+                class="surprise-btn"
+            >
+
+                <span class="gift-icon">
+                    🎁
+                </span>
+
+                <span>
+                    Open My Surprise
+                </span>
+
+            </button>
+
+
+            <!-- Share Button -->
+            <button
+                id="shareBtn"
+                class="share-btn"
+            >
+
+                📱 Share This Wish
+
+            </button>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                Made with ❤️ for my sisters
+            </p>
+
+            <strong>
+                Designed by Sibam Kundu
+            </strong>
+
+            <small>
+                © 2026 • Raksha Bandhan Special
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Surprise Modal -->
+    <div
+        id="surpriseModal"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-modal"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <div class="gift-animation">
+                🎁
+            </div>
+
+            <div class="modal-badge">
+                💖 SURPRISE UNLOCKED
+            </div>
+
+            <h2 id="modalTitle">
+                For You, Sonali Di ❤️
+            </h2>
+
+            <p id="modalMessage">
+                May your life always be filled with
+                happiness, love and success.
+            </p>
+
+            <div class="heart-line">
+                ❤️ 💕 ❤️
+            </div>
+
+            <button
+                id="modalCloseButton"
+                class="modal-button"
+            >
+                Thank You 💗
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Music -->
+    <audio
+        id="bgMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="audio/rakhi.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
